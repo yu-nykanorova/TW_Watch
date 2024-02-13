@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "League Spartan", Arial, Helvetica, sans-serif;
+}
+
+.head-container, main, .container, .models {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.head-container {
+    max-width: 1440px;
+    background: #f8f8f8;
+    padding: 40px 158px 179px 148px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    max-width: 1134px;
+}
+
+.mor705-subtitle {
+    color: #161515;
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    margin-bottom: 53px;
+}
+
+.main-title {
+    color: #272727;
+    font-size: 250px;
+    font-weight: 300;
+    margin-bottom: 43px;
+}
+
+.main-desc {
+    color: #161515;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 155%;
+    max-width: 575px;
+    margin-bottom: 61px;
+}
+
+.buy-info {
+    display: flex;
+}
+
+.buy-button {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #161515;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    padding: 30px 74px;
+    max-width: 280px;
+}
+
+.buy-button:hover {
+    color: #161515;
+    text-shadow: 0px 0px 1px #161515;
+    background: radial-gradient(#fce1c7, #f3c192, #bb8b5d, #704d2c, #312010);
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.price-field {
+    background: #fff;
+    color: #272727;
+    font-size: 32px;
+    font-weight: 300;
+    padding: 30px 27px;
+    max-width: 143px;
+}
+
+.price-field:hover {
+    box-shadow: 0px 0px 15px 0px #bb8b5d;
+    text-shadow: 0px 0px 1px #161515;
+}
+
+.main-image {
+    max-width: 408px;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0px 158px 142px 148px;
+}
+
+.watch-models {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1134px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.pop-subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 186%;
+    color: #000;
+}
+
+.models-title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 112%;
+    color: #000;
+    margin-bottom: 84px;
+}
+
+.models-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 85px;
+    margin-bottom: 60px;
+}
+
+.model {
+    max-width: 535px;
+    text-align: center;
+}
+
+.model-image {
+    background: #f8f8f8;
+    padding: 90px 50px;
+    margin-bottom: 67px;
+}
+
+.model-image > img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.model-name {
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 17px;
+    color: #161515;
+}
+
+.model-desc {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 155%;
+    min-height: 230px;
+    color: #161515;
+}
+
+.product-desc {
+    max-width: 535px;
+}
+
+.product-desc-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 186%;
+    text-transform: capitalize;
+    color: #161515;
+    margin-bottom: 58px;
+}
+
+.product-desc-title > span {
+    display: inline-block;
+    position: relative;
+    /* border: 2px solid gold; */
+}
+
+.product-desc-title > span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #707070;
+    width: 71%;
+    height: 1px;
+    bottom: -5px;
+    left: 15%;
+}
+
+.product-desc-content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 170%;
+    color: #161515;
+}
+
+.product-desc-content > a {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #bb8b5d;
+}
+
+.product-desc-content > a:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+   
+    .head-container {
+        padding: 40px 130px 80px;
+    }
+    .mor705-subtitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .main-title {
+        font-size: 200px;
+        margin-bottom: 30px;
+    }
+    .main-desc {
+        font-size: 26px;
+        line-height: 120%;
+    }
+    .buy-info {
+        max-width: 350px;
+    }
+    .buy-button {
+        font-size: 26px;
+        padding: 25px 40px;
+    }
+    .price-field {
+        font-size: 26px;
+        padding: 25px 27px;
+    }
+    .main-desc {
+        margin-bottom: 30px;
+    }
+    .container {
+        padding: 0px 130px 120px 130px;
+    }
+    .models-list {
+        row-gap: 50px
+    }
+    .models-title {
+        margin-bottom: 40px;
+    }
+    .model-image {
+        padding: 60px 50px;
+        margin-bottom: 40px;
+    }
+    .model-name {
+        font-size: 26px;
+    }
+    .model-desc {
+        font-size: 26px;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .main-title {
+        font-size: 150px;
+        margin-bottom: 10px;
+    }
+    .main-desc {
+        font-size: 24px;
+        line-height: 110%;
+    }
+    .main-image {
+        max-width: 200px;
+    }
+    .container {
+        padding: 0px 100px 80px 100px;
+    }
+    .models-list {
+        margin-bottom: 30px;
+    }
+    .model {
+        max-width: 450px; 
+    }
+    .models-title {
+        margin-bottom: 20px;
+    }
+    .model-image {
+        padding: 40px 30px;
+        margin-bottom: 30px;
+    }
+    .model-desc {
+        font-size: 26px;
+        line-height: 115%;
+    }
+    .product-desc-title {
+        font-size: 28px;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+    .product-desc-content {
+        font-size: 22px;
+        line-height: 130%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .head-container {
+        padding-bottom: 50px;
+    }
+    .main-title {
+        font-size: 130px;
+        margin-bottom: 10px;
+    }
+    .buy-button {
+        font-size: 24px;
+        padding: 20px 28px;
+    }
+    .price-field {
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+    .container {
+        padding: 0px 80px 60px 80px;
+    }
+    .models-title {
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+    .model-image {
+        padding: 30px 20px;
+        margin-bottom: 35px;
+    }
+    .model-desc {
+        font-size: 24px;
+        line-height: 110%;
+    }
+    .product-desc-title {
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+    .product-desc-content {
+        font-size: 20px;
+        line-height: 115%;
+    }
+}
