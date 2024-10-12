@@ -24,15 +24,18 @@ body {
 .head-container {
     max-width: 1440px;
     background: #f8f8f8;
-    padding: 40px 158px 179px 148px;
+    padding: 40px 183px 179px 135px;
 }
 
 main {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
     align-items: center;
     max-width: 1134px;
+}
+
+.main-info {
+    padding-right: 80px;
 }
 
 .mor705-subtitle {
@@ -74,6 +77,7 @@ main {
     font-weight: 300;
     padding: 30px 74px;
     max-width: 280px;
+    
 }
 
 .buy-button:hover {
@@ -82,7 +86,7 @@ main {
     background: radial-gradient(#fce1c7, #f3c192, #bb8b5d, #704d2c, #312010);
     border-radius: 5px;
     transform: scale(1.05);
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .price-field {
@@ -101,6 +105,7 @@ main {
 
 .main-image {
     max-width: 408px;
+    flex-shrink: 0.5;
 }
 
 .main-image:hover {
@@ -158,7 +163,8 @@ main {
 
 .model-image > img:hover {
     transform: scale(1.05);
-    transition: 0.3s;
+    transition: 0.2s;
+
 }
 
 .model-name {
@@ -193,7 +199,6 @@ main {
 .product-desc-title > span {
     display: inline-block;
     position: relative;
-    /* border: 2px solid gold; */
 }
 
 .product-desc-title > span::before {
@@ -226,7 +231,7 @@ main {
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
    
     .head-container {
         padding: 40px 130px 80px;
@@ -258,7 +263,7 @@ main {
         margin-bottom: 30px;
     }
     .container {
-        padding: 0px 130px 120px 130px;
+        padding: 0px 90px 90px 90px;
     }
     .models-list {
         row-gap: 50px
@@ -279,27 +284,40 @@ main {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
+    .head-container {
+        padding: 30px;
+    }
     main {
         flex-direction: column-reverse;
         gap: 10px;
     }
+    .main-info {
+        padding: 0;
+    }
     .main-title {
         font-size: 150px;
         margin-bottom: 10px;
+        text-align: center;
     }
     .main-desc {
         font-size: 24px;
         line-height: 110%;
+        width: 100%;
+    }
+    .buy-info {
+        max-width: inherit;
+        justify-content: center;
     }
     .main-image {
         max-width: 200px;
     }
     .container {
-        padding: 0px 100px 80px 100px;
+        padding: 0px 60px 50px 60px;
     }
     .models-list {
         margin-bottom: 30px;
+        row-gap: 40px;
     }
     .model {
         max-width: 450px; 
@@ -327,9 +345,6 @@ main {
 }
 
 @media screen and (max-width: 560px) {
-    .head-container {
-        padding-bottom: 50px;
-    }
     .main-title {
         font-size: 130px;
         margin-bottom: 10px;
@@ -343,7 +358,10 @@ main {
         padding: 20px 20px;
     }
     .container {
-        padding: 0px 80px 60px 80px;
+        padding: 0px 50px 40px 50px;
+    }
+    .models-list {
+        row-gap: 30px;
     }
     .models-title {
         margin-bottom: 20px;
