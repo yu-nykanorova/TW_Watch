@@ -77,16 +77,14 @@ main {
     font-weight: 300;
     padding: 30px 74px;
     max-width: 280px;
-    
+    transition: 0.2s all ease-in-out;
 }
 
 .buy-button:hover {
     color: #161515;
+    background: rgba(187, 139, 93, 0.84px);
     text-shadow: 0px 0px 1px #161515;
-    background: radial-gradient(#fce1c7, #f3c192, #bb8b5d, #704d2c, #312010);
-    border-radius: 5px;
-    transform: scale(1.05);
-    transition: 1s;
+    transform: scale(1.02);
 }
 
 .price-field {
@@ -96,10 +94,11 @@ main {
     font-weight: 300;
     padding: 30px 27px;
     max-width: 143px;
+    transition: 0.2s all ease-in-out;
 }
 
 .price-field:hover {
-    box-shadow: 0px 0px 15px 0px #bb8b5d;
+    box-shadow: 0px 0px 5px 0px #bb8b5d;
     text-shadow: 0px 0px 1px #161515;
 }
 
@@ -225,10 +224,11 @@ main {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #bb8b5d;
+    transition: 0.2s all ease-in-out;
 }
 
 .product-desc-content > a:hover {
-    transform: scale(1.05);
+    color: navy;
 }
 
 @media screen and (max-width: 1080px) {
